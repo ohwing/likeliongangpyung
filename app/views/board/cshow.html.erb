@@ -1,0 +1,6 @@
+<h1>제목 : <%= @cbbs.title %></h1>
+<h2>내용 : <%= @cbbs.content %></h2>
+
+<h3><a href="/board/cedit/<%= @cbbs.id %>">수정</a></h3>
+<h3><a href="/board/cdestroy/<%= @cbbs.id %>" data-confirm="진짜로 삭제 하시겠어요?" data-method="post">삭제</a></h3>
+<a href="/board/cb">목록으로</a>
